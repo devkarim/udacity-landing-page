@@ -17,9 +17,11 @@
  * Define Global Variables
  *
  */
+
 const allSections = document.getElementsByTagName('section');
 const navList = document.getElementById('navbar__list');
 const scrollToUp = document.getElementById('scrollTop');
+let scrollTimer;
 
 /**
  * End Global Variables
@@ -85,7 +87,6 @@ buildNavBar();
  * Begin Events
  *
  */
-let scrollTimer;
 
 /**
  * @description Hide/show navbar

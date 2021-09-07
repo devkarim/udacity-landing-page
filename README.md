@@ -4,6 +4,10 @@
 
 A simple landing page with multiple sections for a Udacity course.
 
+## How to Run
+
+Simply open index.html via any browser like google chrome.
+
 ## Features
 
 - Navbar with smooth scroll.
@@ -17,3 +21,7 @@ A simple landing page with multiple sections for a Udacity course.
 
 - Bootstrap @5.1.1
 - Fontawesome @5.10
+
+## Author
+
+This project belongs to @devkarim.
