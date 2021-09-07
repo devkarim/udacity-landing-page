@@ -34,10 +34,15 @@ let scrollTimer;
  * @param {HTMLElement} element Element to check if in viewport
  * @returns {boolean} If element is in viewport
  */
-const isInViewport = (element) => {
-  const { top, bottom } = element.getBoundingClientRect();
-  return top >= 0 && bottom <= window.innerHeight;
-};
+function isInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+    rect.bottom >= 45 &&
+    rect.right >= 0 &&
+    rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.left <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
 
 /**
  * @description Get all sections data in a good format
