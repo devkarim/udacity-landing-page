@@ -96,7 +96,7 @@ const setNavbarVisible = (show) => {
 };
 
 /**
- * @description Hide/show navbar
+ * @description Hide/show scroll to up button
  * @param {boolean} show Whether to show or hide
  */
 const setScrollToUpVisislbe = (show) => {
