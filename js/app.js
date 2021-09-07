@@ -71,7 +71,6 @@ const buildNavBar = () => {
     const li = document.createElement('li');
     const link = document.createElement('a');
     link.id = `${section.id}-item`;
-    link.setAttribute('href', '#' + section.id);
     link.textContent = section.text;
     link.className = 'menu__link';
     li.appendChild(link);
@@ -155,7 +154,7 @@ checkActiveSection();
 navList.addEventListener('click', (e) => {
   if (e.target.tagName != 'A') return;
   e.preventDefault();
-  const element = document.querySelector(e.target.getAttribute('href'));
+  const element = document.querySelector('#' + e.target.id.split('-')[0]);
   element.scrollIntoView({ behavior: 'smooth', block: 'center' });
 });
 
